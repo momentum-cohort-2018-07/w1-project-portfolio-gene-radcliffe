@@ -1,0 +1,512 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family:  'PT Sans Narrow', sans-serif;
+}
+/*
+
+https://coolors.co/4f6d7a-c0d6df-dbe9ee-4a6fa5-166088
+*/
+/*Header, footer, and navigation.
+and other formatting settings
+*/
+body{
+  
+    background-color: #166088;
+    
+  
+
+}
+a{
+    text-decoration: none;
+    color: white; /*Let other css settings override this*/
+}
+.nav-menu{
+    list-style: none;
+}
+.header{
+   
+    width: 100%;
+    background-color: #f0f6f8;/* f0f6f8 is a lighter color of #dbe9ee #dbe9ef;*/
+    
+
+}
+.bg-color-light{
+
+}
+.bg-color-lighter{
+    background-color: #f7fafb; /*#2f4149 darker color of#4F6D7A;*/
+}
+.bg-color-dark{
+    background-color: #95a7af;/*derivative of #4f6d7a*/
+}
+.bg-color-darker{
+
+}
+.font-color-dark{
+   color: #4F6D7A;
+}
+.font-color-darker{
+    color: #2f4149;
+
+}
+.font-color-light{
+
+}
+.head-font{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+}
+
+.header-name{
+    position: relative;
+    left: 0.8rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+}
+.title{
+    position: relative;
+    left: 0.9rem;
+    font-weight: bold;
+}
+.main-nav{
+    overflow: auto;  
+}
+.main-nav__menu{
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.main-nav__menu--item{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    
+}
+.main-nav__menu--item a{
+   
+    color: #4F6D7A;
+}
+.main-nav__menu--item a:hover{
+    background-color:  #DBE9EE;
+    color: #4F6D7A;
+}
+
+.footer-container{
+    display: block;
+    background-color: #166088;
+    color: #e7eff3;
+    padding: 0.5rem;
+    
+}
+/*do not display in mobile */
+.footer-nav{
+   display: none;
+}
+.footer-nav__menu--items{
+    text-align: center;
+    margin: auto;
+    width:100%;
+   
+}
+.footer-nav__menu--items a{
+    
+}
+.footer-nav__menu--items a:hover{
+    background-color: #739FB7;
+   
+}
+
+.social-nav{
+    display: block;
+}
+.social-nav__menu{
+    display: block;
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.social-nav__menu--items{
+   float: left;
+   width: 50%;
+   text-align:  center;
+}
+
+ .social-nav__menu--items a{
+     width: 100%;
+    
+ }
+
+.social-nav__menu--items a:hover{
+    
+    color: #166088;
+    background-color: #739FB7;/*lighter color of #166088*/
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+}
+/*index page*/
+.container{
+    
+}
+/*Do not display for now - */
+.headline-container{
+    display: none;
+    padding: 0.2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(rgba(22, 96, 136, 0.4),rgba(22, 96, 136, 0.4)), no-repeat center/cover url('/assets/laptop_640_480_tech.jpg');
+    height: 500px;
+}
+.headliner-item__h3{
+    position: relative;
+    text-align: center;
+    font-family: papyrus;
+    color:white;
+
+}
+.headliner-item__p{
+    color:white;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.about-container{
+   
+   
+    border-top: 1px solid #DBE9EE;
+    border-bottom: 1px solid #DBE9EE;
+}
+.about-me__container{
+    display: block;
+    padding: 0.5rem;
+    
+}
+.about-me__headshot{
+    max-width:90%;
+    margin:0 auto;
+    margin-bottom: 0.5rem;
+    border: 1px solid  #4F6D7A;
+}
+
+.about-me__header{
+    margin-bottom: 0.5rem;
+}
+.about-me__name{
+    margin-bottom: 0.5rem;
+    font-size: xx-large;
+}
+.about-me__para{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+/*project page*/
+.project-container{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+.project-header{
+   
+}
+.project-item{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px dotted black;
+    padding: 0.1rem;
+}
+.project-item__header{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    font-size: x-large;
+}
+.project-item__image{
+    display: block;
+
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+.project-item__menu{
+    padding: 0.1rem;
+}
+
+.project-item__menu--links{
+    display: inline;
+    margin-right: 0.2rem;
+}
+.project-item__menu--links a{
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.project-item__menu--links a:hover{
+    background-color:#edf0f1;
+}
+
+/*resume page*/
+.indent-item{
+    width:80%;
+    margin: 0 auto;
+ }
+ .block-span{
+     display: block;
+ }
+ .indent-header{
+  }
+  
+ .pad-top-bottom-headers{
+     padding: 0.2rem 0 0.2rem 0;
+ }
+ .font-space{
+    letter-spacing: 0.1rem;
+ }
+.resume-container{
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+.resume-header{
+    font-size: xx-large
+}
+.resume-name{
+    font-size: x-large
+}
+.objective-container__header p{
+
+}
+.objective-container__header{
+  
+}
+ 
+.certification-container__header{
+   
+   
+   
+}
+.skills-container__header{
+  
+    
+}
+.experience-container__header{
+
+    
+
+}
+.work-title__header{
+
+    
+}
+.experience-container__section{
+    border-top: 1px dashed black;
+    margin: 0.3rem;
+    
+}
+/**
+**  Media Queries
+**
+*/
+@media screen and (min-width: 768px ){
+    body{
+      
+    }
+    /**for the header and footer */
+    .header{
+        overflow:hidden;
+    }
+    .header-name, .title{
+        display: inline-block;
+        width: 50%;
+    }
+    .main-nav{
+        float:right;
+        width: 50%;
+       
+        
+    }
+    .footer-nav{
+        display: block;
+        float: left;
+        width:50%;
+        margin-top: 10%; 
+        padding: 0.2rem;
+     }
+
+     .footer-nav__menu--items{
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+     }
+     .social-nav{
+        float: left;   
+        width: 50%;
+        margin-top: 10%; 
+        border-left: 1px solid #f0f6f8;
+       
+    }
+    .footer-nav__menu{
+
+    }
+    .social-nav__menu{
+           
+    }
+
+    .social-nav__menu--items{
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+     }
+
+    .social-nav__menu--items a{
+        width: 100%;
+        
+    }
+
+    .copyright{
+        clear: both;
+        position: relative;
+        top: 50px;
+        font-size: 1rem;
+      
+    }
+    /*index page*/
+    .container{
+        clear:both;
+    }
+    .about-container{
+        padding: 5%;
+    }
+    .about-me__container{
+       
+        overflow: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        box-shadow: 15px 15px #374c55;/*derivative of #4f6d7a*/
+    }
+    .about-me__headshot{
+        max-width: 50%;
+        
+        float: left;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .about-me__name{
+        float: right;
+        width: 45%;
+    }
+    .about-me__header{
+        float:right;
+        width: 45%;
+    }
+    .about-me__para{
+        float:right;
+        width: 45%;
+        padding: 0.2rem;
+    }
+    .footer-container{
+        clear:both;
+        overflow: auto;
+        height: 500px;
+    }
+   
+    /*Projects page*/
+    .project-container{
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .project-section__alignments{
+        
+        width: 95%;
+        margin-right: auto;
+        margin-left:auto;
+        margin-top: 1%;
+        padding:0.8rem;
+    }
+    .project-header{
+        
+    }
+    .project-item{
+        overflow: auto;
+        
+        border-bottom: 1px dotted black;
+        
+        
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+             
+    }
+    .project-item__header{
+        float: left;
+        width: 50%;
+        margin-bottom: 0.8rem;
+        font-size: x-large;
+    }
+    .project-item__image{
+      
+        float: right;
+        max-width:50%;
+       height: 450px;
+        
+    }
+    .project-item__menu{
+        padding: 0.1rem;
+        float:left;
+        width: 45%;
+    }
+    
+    .project-item__menu--links{
+        display: inline;
+        margin-right: 0.2rem;
+    }
+    .project-item__description{
+        float:left;
+        width: 45%;
+        margin-bottom: 1rem%;
+    }
+    /* for the resume page*/
+    .resume-container{
+        padding: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        width: 80%;
+        margin: 0 auto;
+       
+    }
+    .work-title__header{
+        float: left;
+        width: 60%;
+    }
+    .work-date{
+        float:right;
+        width: 40%;
+    }
+    .work-description__list{
+        clear: both;
+    }
+    .education{
+        overflow:auto;
+    }
+    .education-degree__header{
+        float:left;
+        width: 60%;
+    }
+    .education-graduation__date{
+        float: right;
+        width: 40%;
+    }
+    .education-college{
+        clear:both;
+    }
+}
